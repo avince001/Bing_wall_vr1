@@ -1,3 +1,4 @@
+import os
 import urllib.request
 import struct
 import ctypes
@@ -32,6 +33,7 @@ def change_wallpaper():
     
     if not r:
         print(ctypes.WinError())
-
+    time.sleep(1)
+    os.remove("C:\\Users\\Praveen\\Documents\\New folder\\image.jpg")
 
 change_wallpaper()
