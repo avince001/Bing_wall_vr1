@@ -9,7 +9,6 @@ import ctypes
 def download(url_1):
     url=str(url_1)
     today=str(date.today())
-    print(url)
     pic_name="bing_wall_" + str(today) + ".jpg"
     urllib.request.urlretrieve(url,pic_name)
     return pic_name
